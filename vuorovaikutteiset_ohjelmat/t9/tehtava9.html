@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 9</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let koodi1;
+  let koodi2;
+
+  function arpa(min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  confirm('Arvotaan kaksi eri numerolukon koodia.');;
+
+  koodi1 = arpa(0,9) + '' + arpa(0,9) + '' + arpa(0,9);
+  koodi2 = arpa(1,6) + '' + arpa(1,6) + '' + arpa(1,6) + '' + arpa(1,6);
+
+  alert('i. ' + koodi1 + '\nii. ' + koodi2);
+
+</script>
+</body>
+</html>

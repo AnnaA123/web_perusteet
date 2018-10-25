@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 8</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let noppa1;
+  let noppa2;
+  let summa;
+
+  function noppa(min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  confirm('Heitetäänkö noppia?');;;
+
+  noppa1 = noppa(1,6);
+  noppa2 = noppa(1,6);
+  summa = (+noppa1 + +noppa2);
+
+  alert('Ensimmäisen nopan silmäluku on ' + noppa1 + ' ja toisen nopan silmäluku on ' + noppa2 + '.\nNe tekevät yhteensä ' + summa + '.');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let leiviska;
+  let naula;
+  let luoti;
+  let kokogramma;
+  let kilogramma;
+  let gramma;
+
+  function desimaali(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
+  leiviska = prompt('Syötä massa leivisköinä, nauloina ja luoteina.\n\nSyötä ensin leivisköjen lukumäärä');
+  naula = prompt('Syötä massa leivisköinä, nauloina ja luoteina.\n\nSyötä ensin nyt naulojen lukumäärä');
+  luoti = prompt('Syötä massa leivisköinä, nauloina ja luoteina.\n\nSyötä vielä luotien lukumäärä');
+
+  //Yksi leiviskä on 20 naulaa, yksi naula on 32 luotia ja yksi luoti on 13,3 grammaa.
+
+  kokogramma = ((+leiviska * 20 * 32 * 13.3) + (+naula * 32 * 13.3) + (+luoti * 13.3));
+
+  kilogramma = Math.floor(+kokogramma / 1000);
+  gramma = desimaali(+kokogramma - (+kilogramma * 1000));
+
+  alert('Massa nykymittojen mukaan:\n' + kilogramma + ' kilogrammaa ja ' + gramma + ' grammaa.');
+
+</script>
+</body>
+</html>

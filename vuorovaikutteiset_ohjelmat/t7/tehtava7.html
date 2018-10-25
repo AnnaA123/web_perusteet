@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 7</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let tili1;
+  let prosentti;
+  let prosenttimuunnin;
+  let korko;
+  let tili2;
+
+  function desimaali(x) {
+    return Number.parseFloat(x).toFixed(2);
+  }
+
+  tili1 = prompt('Paljonko saldoa tilillä on euroina(€)?');
+  prosentti = prompt('Mikä on vuotuinen korkoprosentti(%)?');
+
+  prosenttimuunnin = (+prosentti / 100);
+  korko = (+prosenttimuunnin * +tili1);
+  tili2 = (+tili1 + +korko);
+
+  alert('Vuodessa kertyvän koron määrä on ' + desimaali(korko) + ' euroa ja kasvaneen saldon määrä ' + desimaali(tili2) + ' euroa.');
+
+</script>
+</body>
+</html>
