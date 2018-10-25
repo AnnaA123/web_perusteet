@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 2</title>
+</head>
+<body>
+<script>
+  'use strict';
+  function hattu(min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  let nimi = prompt('Mikä sinun nimesi on?');
+  let tupa = hattu(1,4);
+
+  switch (tupa) {
+    case 1:
+      alert(nimi + ', olet Rohkelikko.');
+      break;
+    case 2:
+      alert(nimi + ', olet Luihuinen.');
+      break;
+    case 3:
+      alert(nimi + ', olet Puuskupuh.');
+      break;
+    case 4:
+      alert(nimi + ', olet Korpinkynsi.');
+      break;
+  }
+
+</script>
+</body>
+</html>

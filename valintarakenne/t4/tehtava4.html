@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 4</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  let lompakko = prompt('Kuinka paljon rahaa lompakossasi on?');
+
+  let hinta = prompt('Minkä hintainen bussilippu on?');
+
+  if (+lompakko >= +hinta){
+    lompakko = (+lompakko - +hinta);
+    alert('Hyvää matkaa!')
+  }else{
+    alert('Rahasi eivät riitä lipun ostoon.');
+  }
+
+  alert('Sinulla on ' + lompakko + ' rahaa.');
+
+</script>
+</body>
+</html>

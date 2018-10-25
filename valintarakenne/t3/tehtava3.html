@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 3</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  let sp = prompt('Kirjoita sukupuolesi (mies/nainen)?');
+  let hemoglobiini;
+
+  switch (sp) {
+    case 'mies':
+      hemoglobiini = prompt('Mikä hemoglobiiniarvosi on (g/l)?');
+        if (hemoglobiini<134) {
+          alert('Hemoglobiiniarvosi on alhainen.')
+        }else if (hemoglobiini>195) {
+          alert('Hemoglobiiniarvosi on korkea.')
+        }else{
+          alert('Hemoglobiiniarvosi on normaali.')
+        }
+      break;
+    case 'nainen':
+      hemoglobiini = prompt('Mikä hemoglobiiniarvosi on (g/l)?');
+      if (hemoglobiini<117) {
+        alert('Hemoglobiiniarvosi on alhainen.')
+      }else if (hemoglobiini>175) {
+        alert('Hemoglobiiniarvosi on korkea.')
+      }else{
+        alert('Hemoglobiiniarvosi on normaali.')
+      }
+      break;
+    default:
+      alert('Virhe');
+  }
+
+</script>
+</body>
+</html>

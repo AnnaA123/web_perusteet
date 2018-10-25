@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  const vastaus = confirm('Lasketaanko neliöjuuri?');
+
+  switch (vastaus) {
+    case true:
+      const luku = prompt('Syötä luku, josta haluat neliöjuuren.');
+      if (luku > 0){
+        const nj = (Math.sqrt(+luku));
+        alert('Luvun ' + luku + ' neliöjuuri on ' + nj + '.');
+      }else{
+        alert('Negatiivisen luvun neliöjuuri ei ole määritelty.');
+      }
+      break;
+    case false:
+      alert('Neliöjuurta ei lasketa.');
+      break;
+  }
+</script>
+</body>
+</html>

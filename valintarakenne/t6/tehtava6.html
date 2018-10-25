@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  const vuosi = prompt('Syötä vuosiluku');
+
+  const tasan = (+vuosi / 4);
+  const sata = (+vuosi / 100);
+
+  if (Number.isSafeInteger(tasan)) {
+    if (Number.isSafeInteger(sata)) {
+      const nelja = (+vuosi / 400);
+      if (Number.isSafeInteger(nelja)) {
+        alert('Vuosi ' + vuosi + ' on karkausvuosi.');
+      }else{
+        alert('Vuosi ' + vuosi + ' ei ole karkausvuosi.');
+      }
+    }else{
+      alert('Vuosi ' + vuosi + ' on karkausvuosi.');
+    }
+  }else{
+    alert('Vuosi ' + vuosi + ' ei ole karkausvuosi.');
+  }
+
+</script>
+</body>
+</html>
