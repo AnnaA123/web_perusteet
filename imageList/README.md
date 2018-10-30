@@ -1,5 +1,7 @@
 # CSS Exercise - Image List
 
+This is an excercise mostly written by my teacher.
+
 1. Clone this repo to a folder of your choise `git clone https://github.com/ilkkamtk/imageList.git` or download as ZIP
 2. Edit css/main.css
   * The thumbnails (li elements) should form a grid
