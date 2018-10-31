@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 4</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  function kuutio(min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  let arpa = prompt('Syötä arpakuutioiden lukumäärä.');
+  let summa = 0;
+
+  while (arpa > 0) {
+    summa = (+summa + kuutio(1, 6));
+    arpa = (+arpa - 1);
+  }
+  alert('Silmälukujen summa on ' + summa + '.');
+
+</script>
+</body>
+</html>

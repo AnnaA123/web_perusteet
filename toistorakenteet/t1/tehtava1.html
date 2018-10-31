@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 1</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  let luku = prompt('Syötä kokonaisluku.');
+  let muutos = luku;
+
+  while (luku > 1) {
+    muutos = (muutos * (luku - 1));
+    luku = (luku - 1);
+  }
+
+  alert('Luvun kertoma on ' + muutos + '.');
+
+</script>
+</body>
+</html>

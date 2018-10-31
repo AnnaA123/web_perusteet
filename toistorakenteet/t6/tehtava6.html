@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let lkm = prompt('Syötä arpakuutioiden lukumäärä.');
+  let silma = prompt('Syötä silmälukujen summa.');
+  let i;
+  let j;
+  let summa;
+  let maara = 0;
+  let todnak = 0;
+  let prosentti;
+
+  function kuutio(min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  for (j =1; j <= 10000; j++) {
+    for (i = 1; i <= lkm; i++) {
+      summa = (kuutio(1, 7));
+      maara = +maara + +summa;
+    }
+    if (+maara === +silma) {
+      todnak++;
+    }
+    maara = 0;
+
+  }
+
+  prosentti = (+todnak / 100);
+
+  alert('Todennäköisyys, jolla ' + lkm + ':n nopan silmälukujen summa on ' + silma + ', on ' + prosentti + '%.');
+
+
+</script>
+</body>
+</html>

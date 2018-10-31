@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 2</title>
+</head>
+<body>
+<script>
+  'use strict';
+
+  let luku = prompt('Syötä positiivinen kokonaisluku.');
+  let neliojuuri;
+
+  while (luku < 0) {
+    luku = prompt('Syötä positiivinen kokonaisluku.');
+  }
+
+  neliojuuri = Math.sqrt(+luku);
+
+  alert('Luvun ' + luku + ' neliöjuuri on ' + neliojuuri + '.');
+
+</script>
+</body>
+</html>
