@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 5</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let luvut = [];
+  let tehty = false;
+  let i = 0;
+  let tarkista;
+
+  while (tehty === false){
+    let uusi = prompt('Syötä joku luku väliltä 1..1000.');
+    tarkista = luvut.includes(+uusi);
+    if (tarkista === true){
+      tehty = true;
+      alert('Luku on jo kirjoitettu.');
+    }
+    luvut[i] = +uusi;
+    i++;
+  }
+
+
+</script>
+</body>
+</html>

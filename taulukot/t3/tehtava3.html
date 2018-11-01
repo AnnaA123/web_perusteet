@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 3</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let koirat = [];
+  let i;
+  let j;
+
+  for (i = 0; i < 6; i++) {
+    koirat[i] = prompt('Syötä ' + (+i + 1) + '. koiran nimi.');
+  }
+
+  koirat.sort();
+  koirat.reverse();
+
+  for (j = 0; j < 6; j++) {
+    document.write(koirat[j] + '<br>');
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 4</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let luvut = [];
+  let uusi = 1;
+  let i = 0;
+
+  while (+uusi !== 0) {
+    uusi = prompt('Syötä luku.');
+    luvut[i] = uusi;
+    i++;
+  }
+
+  luvut.sort();
+  luvut.reverse();
+  document.write(luvut);
+
+</script>
+</body>
+</html>

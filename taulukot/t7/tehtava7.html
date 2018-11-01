@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 6</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let ehdokkaat = [];
+  let maara;
+  let i;
+  let j;
+  let k;
+  let kysely;
+  let voittaja;
+
+
+  maara = prompt('Syötä ehdokkaiden määrä.');
+
+  for (i = 0; i <= maara; i++) {
+    ehdokkaat[i] = 0;
+  }
+
+  let aanestajat = prompt('Syötä äänestäjien määrä.');
+
+  for (j = 0; j <= +aanestajat; j++) {
+    kysely = prompt('Ketä äänestät?');
+    ehdokkaat[+kysely] = (+(ehdokkaat[+kysely]) + 1);
+  }
+
+  let suurin = 1;
+  for (k = 2; k <= maara; k++){
+    if (+(ehdokkaat[+k]) > +(ehdokkaat[+suurin])){
+      voittaja = +k;
+    }
+  }
+
+  alert('Voittaja on ' + voittaja);
+    
+
+</script>
+</body>
+</html>

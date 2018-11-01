@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 2</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let osallistujat = [];
+  let i;
+  let j;
+
+  let maara = prompt('Syötä osallistujien määrä.');
+
+  for (i = 0; i < maara; i++) {
+    osallistujat[i] = prompt('Syötä ' + (+i + 1) + '. osallistujan nimi.');
+  }
+
+  for (j = 0; j < maara; j++) {
+    document.write((+j + 1) + '. ' + osallistujat[j] + '<br>');
+  }
+
+</script>
+</body>
+</html>
