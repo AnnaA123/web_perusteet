@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Tehtävä 7</title>
+</head>
+<body>
+<script>
+  'use strict';
+  let n;
+  let arpa = [];
+
+  function arpoo(min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  for (n = 0; n < 25; n++){
+    let nro = arpoo(0,3);
+    arpa [n] = (4 * (+n + 1) - +nro);
+  }
+
+  document.write(arpa.sort());
+
+</script>
+</body>
+</html>
