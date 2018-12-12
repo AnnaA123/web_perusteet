@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+<!--<div class="header" id="myHeader">
+    <h2>My Header</h2>
+    <h1>logo</h1>
+    <p>profiilikuva</p>
+</div>-->
+
+
+<ul class="header sticky" id="myHeader">
+    <form class="ylapalkkidivit">
+        <li><input id="haku" style="border-radius:5px; margin-left: 5px" type="text" placeholder="Search"></li>
+        <li><button id="hakunappi" style="height: 24px; margin-left:5px">Search</button></li>
+    </form>
+
+    <div class="ylapalkkidivit">
+        <li><a href="main.html" class="noUnderLine"><h1 id="sivunimi">TreeHuggers</h1><li><img src="img/tree.png" width="50px" height="50px"></a></li>
+
+        </li>
+    </div>
+
+    <!--<li><img id="logo "src="http://placekitten.com/400/50"></li>-->
+
+    <div class="ylapalkkidivit">
+        <li><button style="height: 24px;" id="upload">Upload pictures</button></li>
+        <li><img id="sprofilepic" src="http://placekitten.com/50/50"></li>
+    </div>
+
+</ul>
+<<div class="main_page">
+    <div class="container " id="indexid">
+        <ul class="content" id="feed">
+
+            <!--
+            <img  id="kuva" class="kuvatyyli" >
+
+            <img class="kuvatyyli" src="img/Koira.jpg">
+
+            <img class="kuvatyyli" src="img/treehugger.jpg">
+            -->
+
+
+        </ul>
+    </div>
+</div>
+<!--modal---->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+        <h3 style="color: black" id="profileName">Profile name</h3>
+        <div class="buttons">
+            <a href="profile.html"><button id="myprofile">Profile</button></a>
+            <a href="signup.html"><button id="logout">Logout</button></a>
+        </div>
+    </div>
+</div>
+
+<div id="uploadmodal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <form action="/upload" method="post" enctype="multipart/form-data" id="kuvalaheta">
+            <span class="sulje">&times;</span>
+            <h2 style="color: black">Upload picture</h2>
+            <div id="lataakuva" class="kentat">
+                <li class="input"><input type="file" name="kuva" accept="image/*"></li>
+            </div>
+            <br>
+            <textarea name="description" placeholder="Description"></textarea>
+            <div class="kentat">
+                <button id="laheta"><h3>Done</h3></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script src="js/upload.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

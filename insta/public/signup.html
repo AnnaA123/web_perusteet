@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etusivu</title>
+    <link rel="stylesheet" href="css/frontstyle.css">
+</head>
+<body>
+
+<ul class="header sticky" id="myHeader">
+    <div class="ylapalkkidivit">
+        <li><h1>TreeHuggers</h1></li><li><img src="img/tree.png" width="50px" height="50px"></li>
+    </div>
+</ul>
+
+<main>
+    <div class="front">
+        <h1>Welcome to Treehuggers!</h1>
+        <p>Treehuggers is a free photo sharing service and social network that was opened in December 2018. This service allows users to share pictures and love each other's content.</p><img src="img/Sawtooth-Oak_450_a.jpg">
+    </div>
+
+
+    <!--
+    <div id="signupform" class="signup">
+        <h2 class="center">Sing up</h2>
+
+        <div class="kentat">
+            <li class="input"><input name="username" type="text" placeholder="Username"></li>
+        </div>
+
+        <div class="kentat">
+            <li class="input"><input name="suemail" type="text" placeholder="Email"></li>
+        </div>
+
+
+        <div class="kentat">
+            <li class="input"><input name="password" type="text" placeholder="Password"></li>
+        </div>
+
+        <div class="kentat">
+            <li class="input"><input name="passwordcheck" type="text" placeholder="Password again"></li>
+        </div>
+
+        <div class="kentat">
+            <label><input id="tofs" type="checkbox" value="terms">I accept the <a id="tos" href="#terms">Terms of Service</a></label>
+        </div>
+
+        <div class="kentat">
+            <button type="submit" id="create"><h3>Create account</h3></button>
+        </div>
+
+
+        <p id="signin" class="center">Already a member?<a href="#contact">Sign in here</a></p>
+    </div>
+-->
+
+
+    <!-- Sign Up form -->
+
+    <form class="signup" action="register" method="post">
+        <h2 class="center">Sign up</h2>
+
+        <div class="kentat">
+            <input class="kentat input" type="text" name="username" placeholder="username">
+        </div>
+
+        <div class="kentat">
+            <input class="kentat input" type="text" name="suemail" placeholder="email">
+        </div>
+
+        <div class="kentat">
+            <input class="kentat input" type="password" name="password" placeholder="password">
+        </div>
+
+        <div class="kentat">
+            <input class="kentat input" type="password" name="passwordcheck" placeholder="password again">
+        </div>
+
+        <div class="kentat">
+            <input class="kentat" type="submit" value="Register">
+        </div>
+
+        <p id="signin" class="center">Already a member?<br><a href="#contact">Sign in here</a></p>
+    </form>
+</main>
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+
+        <span class="close">&times;</span>
+        <h2 style="color: black">Sign in</h2>
+
+        <!--
+        <div id="user" class="kentat">
+            <li class="input"><input type="text" placeholder="Username"></li>
+        </div>
+        <div class="kentat">
+            <li class="input"><input type="text" placeholder="Password"></li>
+        </div>
+        <label><input type="checkbox" value="logged">Keep me logged in</label>
+        <div class="kentat">
+            <button id="login"><h3>Continue</h3></button>
+        </div>
+
+        -->
+
+        <form action="login" method="post">
+            <div class="kentat">
+            <input class="kentat" type="text" name="username" placeholder="username">
+            </div>
+            <div class="kentat">
+            <input class="kentat" type="password" name="password" placeholder="password">
+            </div>
+            <div class="kentat">
+            <input class="kentat" type="submit" value="Login">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="js/signinmodal.js"></script>
+</body>
+</html>

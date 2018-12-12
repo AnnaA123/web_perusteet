@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+<div class="container" id="runko"></div>
+
+<ul class="header sticky" id="myHeader">
+    <form class="ylapalkkidivit">
+        <li><input id="haku" style="border-radius:5px;" type="text" placeholder="Search"></li>
+        <li><button id="hakunappi" style="height: 24px;">Search</button></li>
+    </form>
+
+    <div class="ylapalkkidivit">
+        <li><a href="main.html" class="noUnderLine"><h1 id="sivunimi">TreeHuggers</h1><li><img src="img/tree.png" width="50px" height="50px"></a></li>
+
+        </li>
+    </div>
+
+    <!--<li><img id="logo "src="http://placekitten.com/400/50"></li>-->
+
+    <div class="ylapalkkidivit">
+        <li style="visibility: hidden"><a href="#contact">Login</a></li>
+        <li style="visibility: hidden"><a href="#contact">SignUp</a></li>
+        <li><button style="height: 24px;" id="upload">Upload pictures</button></li>
+        <li id="sprofilepic"><img src="img/profpic.png"></li>
+    </div>
+
+</ul>
+
+<div class="main_page">
+
+<div class="container">
+    <div id="ptiedot">
+
+        <img id="userimg" name="userimg" class="isoprofiili" src="img/profpic.png" >
+        <form action="/profilepic" id="profpicc" method="post">
+
+            <label class="button">Change picture
+                <input type="file" name="mediafile" accept="image/*">
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+
+
+        <div id="profteksti">
+            <h2 id="pnimi"></h2>
+            <button id="muokkaa" class="seen">Change description</button>
+            <div id="ktiedot">
+                <p id="kuvaus" class="seen"></p>
+            </div>
+            <!--<button id="muokattu" class="hidden">Save</button>-->
+
+            <!--
+            <section name="uus" id="uus" class="form-container hidden">
+                <h3>Change description</h3>
+                <form action="/upload" id="mediaform">
+                    <textarea name="description" placeholder="Description"></textarea>
+                    <br>
+                    <button type="submit">Ok</button>
+                </form>
+            </section>
+            -->
+        </div>
+    </div>
+
+
+    <!-- kuvaat -->
+    <div class="container " id="indexid">
+        <ul class="content" id="personalfeed">
+
+           <!--<img class="kuvatyyli" src="img/treehugger.jpg">-->
+        </ul>
+    </div>
+<!--modal---->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+
+            <span class="close">&times;</span>
+            <h3 style="color: black" id="profileName">Profile name</h3>
+            <div class="buttons">
+                <a href="profile.html"><button id="myprofile">Profile</button></a>
+                <a href="signup.html"><button id="logout">Logout</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="uploadmodal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <form action="/upload" method="post" enctype="multipart/form-data" id="kuvalaheta">
+                <span class="sulje">&times;</span>
+                <h2 style="color: black">Upload picture</h2>
+                <div id="lataakuva" class="kentat">
+                    <li class="input"><input type="file" name="kuva" accept="image/*"></li>
+                </div>
+                <br>
+                <textarea name="description" placeholder="Description"></textarea>
+                <div class="kentat">
+                    <button id="laheta"><h3>Done</h3></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="updateimg" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <form action="/upload" method="post" enctype="multipart/form-data" id="kuvalaheta">
+                <span class="sulje">&times;</span>
+                <h2 style="color: black">Upload picture</h2>
+                <div id="lataakuva" class="kentat">
+                    <li class="input"><input type="file" name="kuva" accept="image/*"></li>
+                </div>
+                <br>
+                <textarea name="description" placeholder="Description"></textarea>
+                <div class="kentat">
+                    <button id="laheta"><h3>Done</h3></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+
+<script src="js/modal.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/upload.js"></script>
+</body>
+</html>
